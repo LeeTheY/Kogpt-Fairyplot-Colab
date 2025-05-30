@@ -33,6 +33,6 @@ def generate_story(characters):
     return first_sentence
 
 # 9. 테스트 실행
-characters_input = "스프, 빵"
+characters_input = "수프, 빵"
 print(f"등장요소: {characters_input} (으)로 생성된 동화입니다.\n")
 print(generate_story(characters_input))
