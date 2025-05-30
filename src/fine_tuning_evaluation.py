@@ -16,9 +16,9 @@ tokenizer = Okt()
 tokenize = lambda s: tokenizer.morphs(s)
 
 # 원문 및 생성문
-ref = tokenize("15명이 생활하기에는 동굴은 비좁아서, 소년들은 벼랑에 다른 동굴을 찾아 헤맸지만 허사였고, 지금 사는 동굴을 넓히기로 했다.")
-gen_pre = tokenize("작가가 자신의 캐릭터를 좋아하는 것이 아닌 다른 사람과 함께 모험을 즐길 수 있게 도와주기 위해 노력하는 등장인물이다.")
-gen_post = tokenize("그때 한 소년이 창밖을 내다보고는 놀라서 주위를 둘러보았는데 그 모습을 본 소녀가 자신이 여기서 살아 돌아온 게 틀림없다고 말했다.")
+ref = tokenize("내가 깨난 것을 알자 한 할머니가 수프와 딱딱해 보이는 빵을 내밀어서 정신없이 먹었고 접시 바닥에는 그림이 그려져 있었다.")
+gen_pre = tokenize("수프나 샌드위치, 스테이크, 스낵, 그리고 칵테일.")
+gen_post = tokenize("빵도 먹고 싶고, 오늘은 점심때가니 맛있는 음식을 많이 먹었으면 좋겠다고 생각했다.")
 
 # BLEU & METEOR
 smooth = SmoothingFunction().method1
