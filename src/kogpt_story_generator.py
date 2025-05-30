@@ -15,7 +15,7 @@ tokenizer = PreTrainedTokenizerFast.from_pretrained(
 
 def generate_story(characters):
     prompt = (
-        "아래의 등장요소를 바탕으로 짧은 동화 줄거리를 작성하세요.\n"
+        "아래의 등장요소를 바탕으로 한줄 동화 줄거리를 작성하세요.\n"
         f"등장요소: {characters}\n"
         "줄거리:\n"
     )
@@ -37,12 +37,12 @@ def generate_story(characters):
     generated = tokenizer.decode(output[0], skip_special_tokens=True) 
     story = generated.replace(prompt, "").strip()
 
-    first_sentence = re.split(r'(?<=[.!?])\s', story)[0]
+    first_sentence = re.split(r'(?<=[.!?])\s', story)[0]  # 첫 문장 추출
 
     return first_sentence
 
 
 # 테스트
-characters_input = "소년, 소녀"
+characters_input = "수프, 빵"
 print(f"등장요소: {characters_input} (으)로 생성된 동화입니다.\n")
 print(generate_story(characters_input))
