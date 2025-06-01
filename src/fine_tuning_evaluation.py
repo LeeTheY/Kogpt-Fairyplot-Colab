@@ -18,7 +18,7 @@ tokenize = lambda s: tokenizer.morphs(s)
 # 원문 및 생성문
 ref = tokenize("내가 깨난 것을 알자 한 할머니가 수프와 딱딱해 보이는 빵을 내밀어서 정신없이 먹었고 접시 바닥에는 그림이 그려져 있었다.")
 gen_pre = tokenize("수프나 샌드위치, 스테이크, 스낵, 그리고 칵테일.")
-gen_post = tokenize("빵도 먹고 싶고, 오늘은 점심때가니 맛있는 음식을 많이 먹었으면 좋겠다고 생각했다.")
+gen_post = tokenize("나는 수프가 먹고 싶을 때 말고는 아무것도 하지 않았는데 내일 아침 빵 한 조각 줄 테니 잠깐 기다리라고 했다.")
 
 # BLEU & METEOR
 smooth = SmoothingFunction().method1
