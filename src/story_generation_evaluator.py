@@ -13,6 +13,8 @@ import seaborn as sns
 for res in ['punkt', 'wordnet']:
     nltk.download(res, quiet=True)
 
+nltk.download('punkt_tab')
+
 smooth_fn = SmoothingFunction().method1
 
 # Prompt 매핑
