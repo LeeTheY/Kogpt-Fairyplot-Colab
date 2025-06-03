@@ -3,7 +3,7 @@ import json
 import jsonlines
 
 # 데이터 경로 설정
-folder_path = '/content/drive/MyDrive/Colab Notebooks/storytellerAI/동화줄거리학습데이터'
+folder_path = '/content/drive/MyDrive/Colab Notebooks/storytellerAI/AIHub_fairytale_data'
 output_path = '/content/drive/MyDrive/Colab Notebooks/storytellerAI/processed_fairytales_merged.jsonl'
 
 all_data = []
